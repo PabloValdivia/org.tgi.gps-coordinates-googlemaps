@@ -1,0 +1,17 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Gps-coordinates-googlemaps
+Bundle-SymbolicName: org.tgi.gps-coordinates-googlemaps
+Bundle-Version: 1.0.0.qualifier
+Bundle-Vendor: T.G.I.
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Bundle-Activator: org.adempiere.plugin.utils.AdempiereActivator
+Bundle-ClassPath: .,
+ lib/commons-codec-1.4.jar,
+ lib/commons-httpclient-3.1.jar,
+ lib/commons-logging-1.1.1.jar,
+ lib/json.jar
+Require-Bundle: org.adempiere.base;bundle-version="2.0.0",
+ org.adempiere.plugin.utils;bundle-version="2.0.0"
+Import-Package: org.osgi.service.event
+Service-Component: OSGI-INF/*.xml
